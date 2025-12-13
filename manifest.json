@@ -1,0 +1,27 @@
+{
+    "name": "Ank4ldr Portfolio",
+    "short_name": "Ank4ldr",
+    "description": "Game Developer & Content Creator Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0f",
+    "theme_color": "#8b5cf6",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["portfolio", "games", "development"],
+    "lang": "tr",
+    "dir": "ltr"
+}

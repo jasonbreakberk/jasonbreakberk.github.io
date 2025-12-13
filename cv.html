@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harun Çelebi - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1025 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(26, 26, 37, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .header h1 {
+            font-size: 36px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #a0a0b0;
+            font-size: 16px;
+        }
+
+        .location {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            color: #8b5cf6;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #8b5cf6;
+            font-size: 22px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        p,
+        li {
+            color: #a0a0b0;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "▸";
+            color: #8b5cf6;
+            margin-right: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-category h4 {
+            color: #ec4899;
+            margin-bottom: 8px;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #8b5cf6;
+            font-size: 18px;
+            padding: 30px;
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 15px;
+            border-left: 4px solid #8b5cf6;
+        }
+
+        .experience-item {
+            background: rgba(139, 92, 246, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 3px solid #8b5cf6;
+        }
+
+        .experience-item h3 span {
+            color: #8b5cf6;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: #333;
+                padding: 20px;
+            }
+
+            .cv-container {
+                background: white;
+                box-shadow: none;
+                border: none;
+            }
+
+            h2,
+            .location,
+            ul li::before {
+                color: #8b5cf6 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            p,
+            li {
+                color: #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <header class="header">
+            <h1>📄 HARUN ÇELEBİ</h1>
+            <p>Genç Geliştirici & İçerik Üreticisi Adayı | Donanım Tutkunu</p>
+            <div class="location">
+                <span>📍 İstanbul, Bağcılar</span>
+                <span>🎂 15 Yaşında (2010)</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>🚀 HAKKIMDA</h2>
+            <p>
+                Hem okuyup hem çalışan, hayatı "Hard Mode"da oynayan bir lise öğrencisiyim.
+                Sabahları esnaf kültüründe pişiyor, akşamları i9 işlemcimle dijital dünyayı fethediyorum.
+                Hedefim; kendi oyunumu geliştirip global pazara açılmak ve İngilizcemi "water" gibi akıcı hale getirmek.
+                Hevesim çabuk kaçabilir ama bir şeye tutulduğumda (özellikle PC başındaysam) beni kimse durduramaz.
+            </p>
+        </section>
+
+        <section>
+            <h2>💼 DENEYİM & PROJELER</h2>
+
+            <div class="experience-item">
+                <h3>Apprentice (Çırak) <span>| Aile İşletmesi - Mevcut</span></h3>
+                <ul>
+                    <li>Haftada 4 gün, sabah 9 akşam 5 "gerçek hayat" simülasyonu.</li>
+                    <li>Disiplin, sabır ve kriz yönetimi (özellikle uykusuzken) konusunda master yaptım.</li>
+                    <li>Kendi paramı kazanmanın haklı gururunu yaşıyorum.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Indie Developer & Proje Girişimleri <span>| Serbest Zamanlı</span></h3>
+                <ul>
+                    <li><strong>Media Converter (Python):</strong> VS Code kullanarak kendi medya dönüştürücü aracımı
+                        yazdım, .exe haline getirip GitHub'a attım.</li>
+                    <li><strong>Roblox Geliştirme:</strong> "Brainrot Clicker" gibi viral olma potansiyeli yüksek oyun
+                        mekanikleri üzerine kafa yordum. Roblox Studio ve Lua script mantığına aşinayım.</li>
+                    <li><strong>YouTube & Yayıncılık:</strong> OBS yönetimi, içerik planlaması ve yayın kurulumları
+                        konusunda teknik bilgiye sahibim.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🛠 YETENEKLER</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Yazılım & Araçlar</h4>
+                    <p>Python (Başlangıç/Orta), VS Code, GitHub, OBS Studio, Roblox Studio</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Donanım (Hardware)</h4>
+                    <p>PC toplama, darboğaz analizi, Custom ROM atma, sistem optimizasyonu (i9 12900KF & RTX 4060)</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Dil</h4>
+                    <p>Türkçe (Ana Dil), İngilizce (B2 Hedefli - Aktif olarak çalışıyor)</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🎓 EĞİTİM</h2>
+            <div class="experience-item">
+                <h3>MESEM (Mesleki Eğitim Merkezi) <span>| 11. Sınıf Öğrencisi</span></h3>
+                <p>Haftada 1 gün okul, 4 gün iş. Teoriyi pratikte öğrenen sistem.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>🎮 HOBİLER & İLGİ ALANLARI</h2>
+            <ul>
+                <li><strong>Oyun:</strong> League of Legends (LoL), Roblox, CS 1.6 (Efsanelere saygı)</li>
+                <li><strong>Teknoloji:</strong> Android modlama, Custom ROM'lar, yeni çıkan tech donanımlarını takip
+                    etme</li>
+                <li><strong>Kişisel Gelişim:</strong> İngilizce öğrenimi, Cilt bakımı</li>
+            </ul>
+        </section>
+
+        <div class="quote">
+            💡 "Hayatın zor olduğunu biliyorum ama kolayı ararken kendi yolumu çiziyorum."
+        </div>
+    </div>
+
+    <script>
+        // Auto print when opened
+        // window.onload = () => window.print();
+    </script>
+</body>
+
+</html>
